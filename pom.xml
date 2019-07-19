@@ -27,9 +27,9 @@
   </licenses>
 
   <scm>
-    <connection>git@github.com:sreenigsd/screen-recorder.git</connection>
-    <developerConnection>git@github.com:sreenigsd/screen-recorder.git</developerConnection>
-    <url>https://github.com/sreenigsd/screen-recorder/</url>
+    <connection>scm:git:git://github.com:sreenigsd/screen-recorder.git</connection>
+    <developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
+    <url>http://github.com/stephenc/monte-screen-recorder/tree/master/</url>
     <tag>HEAD</tag>
   </scm>
 
