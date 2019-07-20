@@ -36,13 +36,13 @@ import static com.gsd.sreenidhi.media.BufferFlag.*;
  * <p>
  * Supported input formats:
  * <ul>
- * {@code Format} with {@code BufferedImage.class}, any width, any height,
- * depth=8.
+ * <li>{@code Format} with {@code BufferedImage.class}, any width, any height,
+ * depth=8.</li>
  * </ul>
  * Supported output formats:
  * <ul>
- * {@code Format} with {@code byte[].class}, same width and height as input
- * format, depth=8.
+ * <li>{@code Format} with {@code byte[].class}, same width and height as input
+ * format, depth=8.</li>
  * </ul>
  * The codec supports lossless delta- and key-frame encoding of images with 8
  * bits per pixel.
@@ -95,7 +95,7 @@ import static com.gsd.sreenidhi.media.BufferFlag.*;
  * 00 01                   End of RLE bitmap
  * </pre>
  *
- * References:<br/>
+ * References:
  * <a href="http://wiki.multimedia.cx/index.php?title=Microsoft_RLE">http://wiki.multimedia.cx/index.php?title=Microsoft_RLE</a><br>
  *
  *

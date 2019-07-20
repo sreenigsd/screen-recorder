@@ -27,12 +27,12 @@ public class IntMath {
 
     /**
      * Returns an int whose value is the greatest common divisor of
-     * <tt>abs(a)</tt> and <tt>abs(b)</tt>.  Returns 0 if
-     * <tt>a==0 &amp;&amp; b==0</tt>.
+     * abs(a) and abs(b).  Returns 0 if
+     * a==0 &amp;&amp; b==0.
      *
      * @param  a value with with the GCD is to be computed.
      * @param  b value with with the GCD is to be computed.
-     * @return <tt>GCD(a, b)</tt>
+     * @return GCD(a, b)
      */
     public static int gcd(int a, int b) {
         // Quelle:
@@ -51,12 +51,12 @@ public class IntMath {
     }
     /**
      * Returns a long whose value is the greatest common divisor of
-     * <tt>abs(a)</tt> and <tt>abs(b)</tt>.  Returns 0 if
-     * <tt>a==0 &amp;&amp; b==0</tt>.
+     * abs(a) and abs(b).  Returns 0 if
+     * a==0 &amp;&amp; b==0.
      *
      * @param  a value with with the GCD is to be computed.
      * @param  b value with with the GCD is to be computed.
-     * @return <tt>GCD(a, b)</tt>
+     * @return GCD(a, b)
      */
     public static long gcd(long a, long b) {
         // Quelle:
@@ -75,12 +75,12 @@ public class IntMath {
     }
     /**
      * Returns a long whose value is the greatest common divisor of
-     * <tt>abs(a)</tt> and <tt>abs(b)</tt>.  Returns 0 if
-     * <tt>a==0 &amp;&amp; b==0</tt>.
+     * abs(a) and abs(b).  Returns 0 if
+     * a==0 &amp;&amp; b==0.
      *
      * @param  a value with with the GCD is to be computed.
      * @param  b value with with the GCD is to be computed.
-     * @return <tt>GCD(a, b)</tt>
+     * @return GCD(a, b)
      */
     public static BigInteger gcd(BigInteger a, BigInteger b) {
         // Quelle:
@@ -100,12 +100,12 @@ public class IntMath {
     
     /**
      * Returns an int whose value is the smallest common multiple of
-     * <tt>abs(a)</tt> and <tt>abs(b)</tt>.  Returns 0 if
-     * <tt>a==0 || b==0</tt>.
+     * abs(a) and abs(b).  Returns 0 if
+     * a==0 || b==0.
      *
      * @param  a value with with the SCM is to be computed.
      * @param  b value with with the SCM is to be computed.
-     * @return <tt>SCM(a, b)</tt>
+     * @return SCM(a, b)
      */
     public static int scm(int a, int b) {
         // Quelle:
@@ -137,12 +137,12 @@ public class IntMath {
     }
     /**
      * Returns an int whose value is the smallest common multiple of
-     * <tt>abs(a)</tt> and <tt>abs(b)</tt>.  Returns 0 if
-     * <tt>a==0 || b==0</tt>.
+     * abs(a) and abs(b).  Returns 0 if
+     * a==0 || b==0.
      *
      * @param  a value with with the SCM is to be computed.
      * @param  b value with with the SCM is to be computed.
-     * @return <tt>SCM(a, b)</tt>
+     * @return SCM(a, b)
      */
     public static long scm(long a, long b) {
         // Quelle:
@@ -177,12 +177,12 @@ public class IntMath {
     }
     /**
      * Returns an int whose value is the smallest common multiple of
-     * <tt>abs(a)</tt> and <tt>abs(b)</tt>.  Returns 0 if
-     * <tt>a==0 || b==0</tt>.
+     * abs(a) and abs(b).  Returns 0 if
+     * a==0 || b==0.
      *
      * @param  a value with with the SCM is to be computed.
      * @param  b value with with the SCM is to be computed.
-     * @return <tt>SCM(a, b)</tt>
+     * @return SCM(a, b)
      */
     public static BigInteger scm(BigInteger a, BigInteger b) {
         // Quelle:

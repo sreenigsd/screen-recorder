@@ -17,10 +17,10 @@ import static com.gsd.sreenidhi.media.math.IntMath.*;
 /**
  * Represents a TIFF RATIONAL number. <p> Two LONGs 32-bit (4-byte) unsigned
  * integer: the first represents the numerator of a fraction; the second, the
- * denominator. </p> <p> Invariants: </p> <ul> <li>denominator>=0, the
- * denominator is always a positive integer</li> <li>0/1 is the unique
- * representation of 0.</li> <li>1/0,-1/0 are the unique representations of
- * infinity.</li> </ul>
+ * denominator. </p> <p> Invariants: </p> <ul> <li>&lt;li&gt;denominator=0, the
+ * denominator is always a positive integer&lt;/li&gt; &lt;li&gt;0/1 is the unique
+ * representation of 0.&lt;/li&gt; &lt;li&gt;1/0,-1/0 are the unique representations of
+ * infinity.&lt;/li&gt; </li></ul>
  *
  * @author Werner Randelshofer
  * @version $Id: Rational.java 299 2013-01-03 07:40:18Z werner $
@@ -144,7 +144,7 @@ public class Rational extends Number {
      * Warning. Rational is supposed to be immutable. *
      *
      * private Rational addAssign(Rational that) { if (this.den == that.den) {
-     * // => same denominator: add numerators this.num += that.num; return this;
+     * // = same denominator: add numerators this.num += that.num; return this;
      * }
      *
      * // FIXME - handle overflow long s = scm(this.den, that.den); this.num =
@@ -313,7 +313,7 @@ public class Rational extends Number {
     }
 
     /**
-     * return { -1, 0, +1 } if a < b, a = b, or a > b.
+     * return { -1, 0, +1 } if a &lt; b, a = b, or a &gt; b.
      */
     public int compareTo(Rational that) {
         // The following code avoids BigInteger allocation if the denominators 
@@ -472,9 +472,9 @@ public class Rational extends Number {
     /**
      * Parses a string.
      *
-     * A rational can be represented in the following ways: <li>As a long
-     * number</li> <li>As a double number</li> <li>As an integer/integer
-     * rational number</li>
+     * A rational can be represented in the following ways: &lt;li&gt;As a long
+     * number&lt;/li&gt; &lt;li&gt;As a double number&lt;/li&gt; &lt;li&gt;As an integer/integer
+     * rational number&lt;/li&gt;
      *
      * @throws NumberFormatException if str can not be parsed.
      */

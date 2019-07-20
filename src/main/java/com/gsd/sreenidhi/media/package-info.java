@@ -16,7 +16,6 @@
  * 
  * <p>The framework is defined by the following interfaces and classes.</p>
  * <ul>
- * <li>{@link com.gsd.sreenidhi.media.Player}</li>
  * <li>{@link com.gsd.sreenidhi.media.Format}</li>
  * <li>{@link com.gsd.sreenidhi.media.Codec}</li>
  * <li>{@link com.gsd.sreenidhi.media.Buffer}</li>

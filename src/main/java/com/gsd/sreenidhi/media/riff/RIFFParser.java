@@ -241,15 +241,15 @@ private final static boolean DEBUG =false;
      * interpretation.
      *
      * <p>Pre condition
-     * <li>	Data-, property- and collection chunks must have been
+     * <p>	Data-, property- and collection chunks must have been
      * declared prior to this call.
-     * <li>	When the client never declared chunks, then all local
+     * <p>	When the client never declared chunks, then all local
      * chunks will be interpreted as data chunks.
-     * <li>	The stream must be positioned at the beginning of the
+     * <p>	The stream must be positioned at the beginning of the
      * RIFFFileExpression.
      *
      * <p>Post condition
-     * <li>	When no exception was thrown then the stream is positioned
+     * <p>	When no exception was thrown then the stream is positioned
      * after the RIFFFile expression.
      *
      * <p>Obligation
@@ -495,9 +495,9 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * data chunk.
      *
      * <p>Pre condition
-     * <li>	Data chunks must have been declared before the
+     * <p>	Data chunks must have been declared before the
      * interpretation has been started.
-     * <li>	This method will always return true when neither
+     * <p>	This method will always return true when neither
      * data chunks, property chunks nor collection chunks
      * have been declared,
      *
@@ -521,7 +521,7 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * a group chunk.
      *
      * <p>Pre condition
-     * <li>	Group chunks must have been declared before the
+     * <p>	Group chunks must have been declared before the
      * interpretation has been started.
      * (Otherwise the response is always true).
      *
@@ -541,9 +541,9 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * property chunk.
      *
      * <p>Pre condition
-     * <li>	Property chunks must have been declared before the
+     * <p>	Property chunks must have been declared before the
      * interpretation has been started.
-     * <li>	This method will always return false when neither
+     * <p>	This method will always return false when neither
      * data chunks, property chunks nor collection chunks
      * have been declared,
      */
@@ -560,9 +560,9 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * collection chunk.
      *
      * <p>Pre condition
-     * <li>	Collection chunks must have been declared before the
+     * <p>	Collection chunks must have been declared before the
      * interpretation has been started.
-     * <li>	This method will always return true when neither
+     * <p>	This method will always return true when neither
      * data chunks, property chunks nor collection chunks
      * have been declared,
      *
@@ -581,13 +581,13 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * Declares a data chunk.
      *
      * <p>Pre condition
-     * <li>	The chunk must not have already been declared as of a
+     * <p>	The chunk must not have already been declared as of a
      * different type.
-     * <li>	Declarations may not be done during interpretation
+     * <p>	Declarations may not be done during interpretation
      * of an RIFFFileExpression.
      *
      * <p>Post condition
-     * <li>	Data chunk declared
+     * <p>	Data chunk declared
      *
      * @param	type
      * Type of the chunk. Must be formulated as a TypeID conforming
@@ -608,13 +608,13 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * Declares a FORM group chunk.
      *
      * <p>Pre condition
-     * <li>	The chunk must not have already been declared as of a
+     * <p>	The chunk must not have already been declared as of a
      * different type.
-     * <li>	Declarations may not be done during interpretation
+     * <p>	Declarations may not be done during interpretation
      * of an RIFFFileExpression.
      *
      * <p>Post condition
-     * <li>	Group chunk declared
+     * <p>	Group chunk declared
      *
      * @param	type
      * Type of the chunk. Must be formulated as a TypeID conforming
@@ -635,13 +635,13 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * Declares a property chunk.
      *
      * <p>Pre condition
-     * <li>	The chunk must not have already been declared as of a
+     * <p>	The chunk must not have already been declared as of a
      * different type.
-     * <li>	Declarations may not be done during interpretation
+     * <p>	Declarations may not be done during interpretation
      * of an RIFFFileExpression.
      *
      * <p>Post condition
-     * <li>	Group chunk declared
+     * <p>	Group chunk declared
      *
      *
      * @param	type
@@ -663,13 +663,13 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * Declares a collection chunk.
      *
      * <p>Pre condition
-     * <li>	The chunk must not have already been declared as of a
+     * <p>	The chunk must not have already been declared as of a
      * different type.
-     * <li>	Declarations may not be done during interpretation
+     * <p>	Declarations may not be done during interpretation
      * of an RIFFFileExpression.
      *
      * <p>Post condition
-     * <li>	Collection chunk declared
+     * <p>	Collection chunk declared
      *
      * @param	type
      * Type of the chunk. Must be formulated as a TypeID conforming
@@ -690,13 +690,13 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * Declares a stop chunk.
      *
      * <p>Pre condition
-     * <li>	The chunk must not have already been declared as of a
+     * <p>	The chunk must not have already been declared as of a
      * different type.
-     * <li>	Declarations may not be done during interpretation
+     * <p>	Declarations may not be done during interpretation
      * of an RIFFFileExpression.
      *
      * <p>Post condition
-     * <li>	Stop chunk declared
+     * <p>	Stop chunk declared
      *
      * @param	type
      * Type of the chunk. Must be formulated as a TypeID conforming
@@ -762,8 +762,8 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * Checks if the argument represents a valid RIFF ID.
      *
      * <p>Validation
-     * <li>	Every byte of an ID must be in the range of 0x20..0x7e
-     * <li>	The id may not have leading spaces (unless the id is a NULL_ID).
+     * <p>	Every byte of an ID must be in the range of 0x20..0x7e
+     * <p>	The id may not have leading spaces (unless the id is a NULL_ID).
      *
      * @param	id Chunk ID to be checked.
      * @return	True when the ID is a valid IFF chunk ID.
@@ -785,11 +785,11 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
      * Returns whether the argument is a valid Local Chunk ID.
      *
      * <p>Validation
-     * <ud>
+     * <ul>
      * <li>	Must be valid ID.</li>
-     * <li>	Local Chunk IDs may not collide with GroupIDs.</id>
+     * <li>	Local Chunk IDs may not collide with GroupIDs.</li>
      * <li>	Must not be a NULL_ID.</li>
-     * </ud>
+     * </ul>
      *
      * @param	id Chunk ID to be checked.
      * @return	True when the chunk ID is a Local Chunk ID.

@@ -41,8 +41,8 @@ import static com.gsd.sreenidhi.media.BufferFlag.*;
  * Header:
  * uint32 chunkSize
  *
- * uint16 header 0x0000 => decode entire image
- *               0x0008 => starting line and number of lines follows
+ * uint16 header 0x0000 = decode entire image
+ *               0x0008 = starting line and number of lines follows
  * if header==0x0008 {
  *   uint16 startingLine at which to begin updating frame
  *   uint16 reserved 0x0000
@@ -145,7 +145,7 @@ import static com.gsd.sreenidhi.media.BufferFlag.*;
  * and render it to the output frame -(code) times.</li>
  * </ul>
  *
- * References:<br/>
+ * References:
  * <a href="http://multimedia.cx/qtrle.txt">http://multimedia.cx/qtrle.txt</a><br>
  *
  * @author Werner Randelshofer

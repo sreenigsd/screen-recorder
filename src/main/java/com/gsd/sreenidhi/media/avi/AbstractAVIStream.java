@@ -1,4 +1,5 @@
 /*
+
  * @(#)AbstractAVIStream.java  
  * 
  * Copyright (c) 2011 Werner Randelshofer, Goldau, Switzerland.
@@ -549,7 +550,7 @@ public abstract class AbstractAVIStream {
      * is defined in a "strf" chunk, which contains a {@code BITMAPINFOHEADER}
      * struct.
      *
-     * </pre> //---------------------- // AVI Bitmap Info Header //
+     * </p> //---------------------- // AVI Bitmap Info Header //
      * ---------------------- typedef struct { BYTE blue; BYTE green; BYTE red;
      * BYTE reserved; } RGBQUAD;
      *
@@ -619,7 +620,7 @@ public abstract class AbstractAVIStream {
      * "clrUsed" member. If "clrUsed" is zero, the array contains the // maximum
      * number of colors for the given bitdepth; that is, // 2^"bitCount" colors.
      * } BITMAPINFOHEADER;
-     * </pre>
+     * <p>
      */
     protected class VideoTrack extends Track {
         // Video metadata
@@ -871,17 +872,17 @@ public abstract class AbstractAVIStream {
      *         WAVE_FORMAT_FM_TOWNS_SND = 0x0300,
      *         //  Brooktree Corporation
      *         WAVE_FORMAT_BTV_DIGITAL = 0x0400,
-     *         //  Ing C. Olivetti & C., S.p.A.
+     *         //  Ing C. Olivetti C., S.p.A.
      *         WAVE_FORMAT_OLIGSM = 0x1000,
-     *         //  Ing C. Olivetti & C., S.p.A.
+     *         //  Ing C. Olivetti C., S.p.A.
      *         WAVE_FORMAT_OLIADPCM = 0x1001,
-     *         //  Ing C. Olivetti & C., S.p.A.
+     *         //  Ing C. Olivetti C., S.p.A.
      *         WAVE_FORMAT_OLICELP = 0x1002,
-     *         //  Ing C. Olivetti & C., S.p.A.
+     *         //  Ing C. Olivetti C., S.p.A.
      *         WAVE_FORMAT_OLISBC = 0x1003,
-     *         //  Ing C. Olivetti & C., S.p.A.
+     *         //  Ing C. Olivetti C., S.p.A.
      *         WAVE_FORMAT_OLIOPR = 0x1004,
-     *         //  Lernout & Hauspie
+     *         //  Lernout  Hauspie
      *         WAVE_FORMAT_LH_CODEC = 0x1100,
      *         //  Norris Communications, Inc.
      *         WAVE_FORMAT_NORRIS = 0x1400,
@@ -1250,27 +1251,27 @@ public abstract class AbstractAVIStream {
          */
         protected final static int WAVE_FORMAT_BTV_DIGITAL = 0x0400;
         /**
-         * Ing C. Olivetti & C., S.p.A.
+         * Ing C. Olivetti  C., S.p.A.
          */
         protected final static int WAVE_FORMAT_OLIGSM = 0x1000;
         /**
-         * Ing C. Olivetti & C., S.p.A.
+         * Ing C. Olivetti  C., S.p.A.
          */
         protected final static int WAVE_FORMAT_OLIADPCM = 0x1001;
         /**
-         * Ing C. Olivetti & C., S.p.A.
+         * Ing C. Olivetti  C., S.p.A.
          */
         protected final static int WAVE_FORMAT_OLICELP = 0x1002;
         /**
-         * Ing C. Olivetti & C., S.p.A.
+         * Ing C. Olivetti  C., S.p.A.
          */
         protected final static int WAVE_FORMAT_OLISBC = 0x1003;
         /**
-         * Ing C. Olivetti & C., S.p.A.
+         * Ing C. Olivetti  C., S.p.A.
          */
         protected final static int WAVE_FORMAT_OLIOPR = 0x1004;
         /**
-         * Lernout & Hauspie
+         * Lernout  Hauspie
          */
         protected final static int WAVE_FORMAT_LH_CODEC = 0x1100;
         /**

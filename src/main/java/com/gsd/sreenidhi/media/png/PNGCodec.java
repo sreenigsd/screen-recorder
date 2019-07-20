@@ -28,13 +28,13 @@ import static com.gsd.sreenidhi.media.BufferFlag.*;
  * <p>
  * Supported input formats:
  * <ul>
- * {@code VideoFormat} with {@code BufferedImage.class}, any width, any height,
- * any depth.
+ * <li>{@code VideoFormat} with {@code BufferedImage.class}, any width, any height,
+ * any depth.</li>
  * </ul>
  * Supported output formats:
  * <ul>
- * {@code VideoFormat} with {@code byte[].class}, same width and height as input
- * format, depth=24.
+ * <li>{@code VideoFormat} with {@code byte[].class}, same width and height as input
+ * format, depth=24.</li>
  * </ul>
  *
  * @author Werner Randelshofer

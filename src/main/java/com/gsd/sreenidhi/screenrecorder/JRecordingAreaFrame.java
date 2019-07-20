@@ -36,6 +36,7 @@ import javax.swing.border.Border;
  * @author Werner Randelshofer
  * @version 1.0 2012-05-03 Created.
  */
+@SuppressWarnings("restriction")
 public class JRecordingAreaFrame extends javax.swing.JFrame {
 
     private final static Color backgroundColor = new Color(0x88ffffff, true);

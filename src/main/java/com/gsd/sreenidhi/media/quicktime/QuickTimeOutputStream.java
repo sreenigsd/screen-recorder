@@ -260,7 +260,7 @@ public class QuickTimeOutputStream extends AbstractQuickTimeStream {
      * @param numberOfChannels The number of channels: 1 for mono, 2 for stereo.
      * @param sampleSizeInBits The number of bits in a sample: 8 or 16.
      * @param isCompressed Whether the sound is compressed.
-     * @param frameDuration The frame duration, expressed in the media’s
+     * @param frameDuration The frame duration, expressed in the mediaâ€™s
      * timescale, where the timescale is equal to the sample rate. For
      * uncompressed formats, this field is always 1.
      * @param frameSize For uncompressed audio, the number of bytes in a sample
@@ -415,7 +415,7 @@ public class QuickTimeOutputStream extends AbstractQuickTimeStream {
     }
 
     /**
-     * Gets the preferred volume of this movie’s sound. A value of 1.0 indicates
+     * Gets the preferred volume of this movieâ€™s sound. A value of 1.0 indicates
      * full volume.
      */
     public double getPreferredVolume() {
@@ -423,7 +423,7 @@ public class QuickTimeOutputStream extends AbstractQuickTimeStream {
     }
 
     /**
-     * Sets the preferred volume of this movie’s sound. A value of 1.0 indicates
+     * Sets the preferred volume of this movieâ€™s sound. A value of 1.0 indicates
      * full volume.
      */
     public void setPreferredVolume(double preferredVolume) {
@@ -604,8 +604,8 @@ public class QuickTimeOutputStream extends AbstractQuickTimeStream {
      * @param duration The duration of the sample in media time scale units.
      * @param isSync whether the sample is a sync sample (key frame).
      *
-     * @throws IndexOutofBoundsException if the track index is out of bounds.
-     * @throws IllegalArgumentException if the track does not support video, if
+     * if the track index is out of bounds.
+     * if the track does not support video, if
      * the duration is less than 1, or if the dimension of the frame does not
      * match the dimension of the video.
      * @throws IOException if writing the sample data failed.
@@ -955,14 +955,14 @@ public class QuickTimeOutputStream extends AbstractQuickTimeStream {
         // specified using coordinated universal time (UTC).
 
         d.writeUInt(movieTimeScale); // timeScale
-        // A time value that indicates the time scale for this movie—that is,
+        // A time value that indicates the time scale for this movieâ€”that is,
         // the number of time units that pass per second in its time coordinate
         // system. A time coordinate system that measures time in sixtieths of a
         // second, for example, has a time scale of 60.
 
         d.writeUInt(duration); // duration
         // A time value that indicates the duration of the movie in time scale
-        // units. Note that this property is derived from the movie’s tracks.
+        // units. Note that this property is derived from the movieâ€™s tracks.
         // The value of this field corresponds to the duration of the longest
         // track in the movie.
 
@@ -972,7 +972,7 @@ public class QuickTimeOutputStream extends AbstractQuickTimeStream {
 
         d.writeFixed8D8(preferredVolume); // preferredVolume
         // A 16-bit fixed-point number that specifies how loud to play this
-        // movie’s sound. A value of 1.0 indicates full volume.
+        // movieâ€™s sound. A value of 1.0 indicates full volume.
 
         d.write(new byte[10]); // reserved;
         // Ten bytes reserved for use by Apple. Set to 0.
@@ -988,7 +988,7 @@ public class QuickTimeOutputStream extends AbstractQuickTimeStream {
         d.writeFixed2D30(movieMatrix[8]); // matrix[8]
 
         // The matrix structure associated with this movie. A matrix shows how
-        // to map points from one coordinate space into another. See “Matrices”
+        // to map points from one coordinate space into another. See â€œMatricesâ€�
         // for a discussion of how display matrices are used in QuickTime:
         // http://developer.apple.com/documentation/QuickTime/QTFF/QTFFChap4/chapter_5_section_4.html#//apple_ref/doc/uid/TP40000939-CH206-18737
 

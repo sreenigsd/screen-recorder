@@ -36,12 +36,12 @@ import static com.gsd.sreenidhi.media.BufferFlag.*;
  * {@code TechSmithCodec} (tscc) encodes a BufferedImage as a byte[] array. <p>
  * The TechSmith codec works with AVI and QuickTime. <p> This codec supports
  * encoding from a {@code BufferedImage} into the file format, and decoding from
- * the file format to a {@code BufferedImage}. <p> <p> This codec does not
+ * the file format to a {@code BufferedImage}. </p> <p> This codec does not
  * encode the color palette of an image. This must be done separately. <p>
- * Supported input formats: <ul> {@code Format} with
- * {@code BufferedImage.class}, any width, any height, depth=8,16 or 24. </ul>
- * Supported output formats: <ul> {@code Format} with {@code byte[].class}, same
- * width and height as input format, depth=8,16 or 24. </ul> The codec supports
+ * Supported input formats: <ul> <li>{@code Format} with
+ * {@code BufferedImage.class}, any width, any height, depth=8,16 or 24. </li> </ul>
+ * Supported output formats: <ul> <li>{@code Format} with {@code byte[].class}, same
+ * width and height as input format, depth=8,16 or 24. </li> </ul> The codec supports
  * lossless delta- and key-frame encoding of images with 8, 16 or 24 bits per
  * pixel. <p> Compression of a frame is performed in two steps: In the first,
  * step a frame is compressed line by line from bottom to top. In the second
@@ -79,7 +79,7 @@ import static com.gsd.sreenidhi.media.BufferFlag.*;
  * 00 01                   End of RLE bitmap
  * </pre>
  *
- * References:<br/> <a
+ * References: <a
  * href="http://wiki.multimedia.cx/index.php?title=TechSmith_Screen_Capture_Codec"
  * >http://wiki.multimedia.cx/index.php?title=TechSmith_Screen_Capture_Codec</a><br>
  *
