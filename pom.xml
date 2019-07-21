@@ -11,7 +11,7 @@
 
 	<groupId>com.sreenidhi-gsd</groupId>
 	<artifactId>screen-recorder</artifactId>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 
 	<name>Screen Recorder</name>
 	<description>
@@ -30,7 +30,7 @@
 		<connection>scm:git:git://github.com:sreenigsd/screen-recorder.git</connection>
 		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
 		<url>http://github.com/stephenc/monte-screen-recorder/tree/master/</url>
-		<tag>screen-recorder-1.0</tag>
+		<tag>screen-recorder-1.2</tag>
 	</scm>
 
 	<properties>
@@ -141,13 +141,13 @@
 				      <checkModificationExclude>pom.xml</checkModificationExclude>
 				    </checkModificationExcludes>
 				</configuration>
-				<dependencies>
+				<!-- <dependencies>
 					<dependency>
 						<groupId>org.apache.maven.scm</groupId>
 						<artifactId>maven-scm-provider-gitexe</artifactId>
 						<version>1.9.5</version>
 					</dependency>
-				</dependencies>
+				</dependencies> -->
 			</plugin>
 
 			<plugin>
