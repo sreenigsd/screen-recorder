@@ -11,7 +11,7 @@
 
 	<groupId>com.sreenidhi-gsd</groupId>
 	<artifactId>screen-recorder</artifactId>
-	<version>1.4-SNAPSHOT</version>
+	<version>1.0.${buildNum}-SNAPSHOT</version>
 
 	<name>Screen Recorder</name>
 	<description>
