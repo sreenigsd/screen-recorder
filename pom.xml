@@ -6,12 +6,12 @@
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
-		<version>7</version>
+		<version>9</version>
 	</parent>
 
 	<groupId>com.sreenidhi-gsd</groupId>
 	<artifactId>screen-recorder</artifactId>
-	<version>1.4-SNAPSHOT</version>
+	<version>1.4</version>
 
 	<name>Screen Recorder</name>
 	<description>
@@ -30,7 +30,7 @@
 		<connection>scm:git:git://github.com:sreenigsd/screen-recorder.git</connection>
 		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
 		<url>http://github.com/stephenc/monte-screen-recorder/tree/master/</url>
-		<tag>screen-recorder-1.2</tag>
+		<tag>screen-recorder-1.4</tag>
 	</scm>
 
 	<properties>
@@ -39,12 +39,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mavenVersion>3.0</mavenVersion>
 		<gpg.passphrase>${passphrase}</gpg.passphrase>
-		 <project.scm.id>my-scm-server</project.scm.id>
+		 <project.scm.id>${my-scm-server}</project.scm.id>
 	</properties>
 
 	<distributionManagement>
 		<snapshotRepository>
-			<id>ossrh</id>
+			<id>sonatype-nexus-snapshots</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
@@ -143,12 +143,12 @@
 				    </checkModificationExcludes>
 				</configuration>
 				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.scm</groupId>
-						<artifactId>maven-scm-provider-gitexe</artifactId>
-						<version>1.9.5</version>
-					</dependency>
-				</dependencies>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-scm-plugin</artifactId>
+            <version>1.8.1</version>
+        </dependency>
+    </dependencies>
 			</plugin>
 
 			<plugin>
