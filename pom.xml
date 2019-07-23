@@ -11,7 +11,7 @@
 
 	<groupId>com.sreenidhi-gsd</groupId>
 	<artifactId>screen-recorder</artifactId>
-	<version>1.0.14.0</version>
+	<version>1.0.14.1-SNAPSHOT</version>
 
 	<name>Screen Recorder</name>
 	<description>
@@ -30,7 +30,7 @@
 		<connection>scm:git:git://github.com/sreenigsd/screen-recorder.git</connection>
 		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
 		<url>https://github.com/sreenigsd/screen-recorder/tree/master/</url>
-		<tag>screen-recorder-1.0.14.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 	
 	<properties>
