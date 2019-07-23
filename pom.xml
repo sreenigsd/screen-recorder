@@ -11,7 +11,7 @@
 
 	<groupId>com.sreenidhi-gsd</groupId>
 	<artifactId>screen-recorder</artifactId>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 
 	<name>Screen Recorder</name>
 	<description>
@@ -39,6 +39,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mavenVersion>3.0</mavenVersion>
 		<gpg.passphrase>${passphrase}</gpg.passphrase>
+		 <project.scm.id>my-scm-server</project.scm.id>
 	</properties>
 
 	<distributionManagement>
@@ -141,13 +142,13 @@
 				      <checkModificationExclude>pom.xml</checkModificationExclude>
 				    </checkModificationExcludes>
 				</configuration>
-				<!-- <dependencies>
+				<dependencies>
 					<dependency>
 						<groupId>org.apache.maven.scm</groupId>
 						<artifactId>maven-scm-provider-gitexe</artifactId>
 						<version>1.9.5</version>
 					</dependency>
-				</dependencies> -->
+				</dependencies>
 			</plugin>
 
 			<plugin>
