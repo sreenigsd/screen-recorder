@@ -27,12 +27,12 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:git://github.com:sreenigsd/screen-recorder.git</connection>
+		<connection>scm:git:git://github.com/sreenigsd/screen-recorder.git</connection>
 		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
-		<url>http://github.com/stephenc/monte-screen-recorder/tree/master/</url>
-		<tag>screen-recorder-1.2</tag>
+		<url>https://github.com/sreenigsd/screen-recorder/tree/master/</url>
+		<tag>HEAD</tag>
 	</scm>
-
+	
 	<properties>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
