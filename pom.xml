@@ -30,7 +30,7 @@
 		<connection>scm:git:git://github.com:sreenigsd/screen-recorder.git</connection>
 		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
 		<url>http://github.com/stephenc/monte-screen-recorder/tree/master/</url>
-		<tag>screen-recorder-1.2</tag>
+		<tag>${artifactId}-${version}</tag>
 	</scm>
 
 	<properties>
