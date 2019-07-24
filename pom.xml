@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -11,7 +13,7 @@
 
 	<groupId>com.sreenidhi-gsd</groupId>
 	<artifactId>screen-recorder</artifactId>
-	<version>1.0.14.1-SNAPSHOT</version>
+	<version>1.0.${buildNum}.0-SNAPSHOT</version>
 
 	<name>Screen Recorder</name>
 	<description>
@@ -29,17 +31,17 @@
 	<scm>
 		<connection>scm:git:git://github.com/sreenigsd/screen-recorder.git</connection>
 		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
-		<url>https://github.com/sreenigsd/screen-recorder/tree/master/</url>
-		<tag>HEAD</tag>
+		<url>https://github.com/sreenigsd/screen-recorder/tree/master</url>
+		<tag>${artifactId}-${version}</tag>
 	</scm>
-	
+
 	<properties>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mavenVersion>3.0</mavenVersion>
 		<gpg.passphrase>${passphrase}</gpg.passphrase>
-		 <project.scm.id>my-scm-server</project.scm.id>
+		<project.scm.id>my-scm-server</project.scm.id>
 	</properties>
 
 	<distributionManagement>
@@ -49,9 +51,7 @@
 		</snapshotRepository>
 		<repository>
 			<id>ossrh</id>
-			<url>
-				https://oss.sonatype.org/service/local/staging/deploy/maven2
-			</url>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
 
@@ -64,7 +64,7 @@
 			<systemPath>${basedir}/lib/rt.jar</systemPath>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -134,13 +134,13 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-					<localCheckout>false</localCheckout>
+					<localCheckout>true</localCheckout>
 					<pushChanges>false</pushChanges>
 					<mavenExecutorId>forked-path</mavenExecutorId>
 					<arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
 					<checkModificationExcludes>
-				      <checkModificationExclude>pom.xml</checkModificationExclude>
-				    </checkModificationExcludes>
+						<checkModificationExclude>pom.xml</checkModificationExclude>
+					</checkModificationExcludes>
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -203,6 +203,28 @@
 						<id>attach-javadoc</id>
 						<goals>
 							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.6</version>
+				<configuration>
+				  <!-- This is necessary for gpg to not try to use the pinentry programs -->
+				  <gpgArguments>
+				      <arg>--pinentry-mode</arg>
+				      <arg>loopback</arg>
+				  </gpgArguments>
+				</configuration>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
 						</goals>
 					</execution>
 				</executions>
