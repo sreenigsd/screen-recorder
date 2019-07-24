@@ -28,8 +28,8 @@
 
 	<scm>
 		<connection>scm:git:git://github.com/sreenigsd/screen-recorder.git</connection>
-		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git</developerConnection>
-		<url>https://github.com/sreenigsd/screen-recorder/tree/master/</url>
+		<developerConnection>scm:git:git@github.com:sreenigsd/screen-recorder.git/tree/master</developerConnection>
+		<url>https://github.com/sreenigsd/screen-recorder/tree/master</url>
 		<tag>${artifactId}-${version}</tag>
 	</scm>
 	
